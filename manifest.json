@@ -1,0 +1,26 @@
+{
+    "name": "Godspeed",
+    "version": "1.0.0",
+    "description": "A simple chrome extension blocker.",
+    "manifest_version": 3,
+    "author": "FireStreaker2",
+    "icons": {
+    "16": "./images/goob16.png",
+    "128": "./images/goob128.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "./images/goob16.png",
+            "128": "./images/goob128.png"
+        },
+        "default_popup": "index.html",
+        "default_title": "Godspeed"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "index.js"
+    }
+}
